@@ -1,0 +1,24 @@
+.workspace {
+  display: flex;
+  min-height: 100vh;
+  background-color: #0f172a;
+  color: #ffffff;
+}
+
+.workspace__content {
+  flex: 1;
+  padding: 40px;
+}
+
+.workspace__title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.workspace__description {
+  color: #cbd5e1;
+  font-size: 1rem;
+  margin-bottom: 32px;
+  max-width: 700px;
+}

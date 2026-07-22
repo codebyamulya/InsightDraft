@@ -1,5 +1,7 @@
-function Workspace() {
-  return <h1>Workspace</h1>;
+import Workspace from "../components/Workspace/Workspace";
+
+function WorkspacePage() {
+  return <Workspace />;
 }
 
-export default Workspace;
+export default WorkspacePage;

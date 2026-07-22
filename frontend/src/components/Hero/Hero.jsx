@@ -1,6 +1,6 @@
 import "./Hero.css";
 import { IconUpload, IconArrow } from "../Icons/Icons";
-function Hero({ handleUploadClick, fileName }) {
+function Hero() {
   return (
     <section className="hero">
       <div className="shell hero__grid">
@@ -18,17 +18,12 @@ function Hero({ handleUploadClick, fileName }) {
             not hours.
           </p>
           <div className="hero__actions">
-            <button className="btn btn--primary" onClick={handleUploadClick}>
-              <IconUpload /> Upload a file
+            <button className="btn btn--primary">
+              <IconUpload /> Get Started
             </button>
             <a className="btn btn--ghost" href="#how-it-works">
               See how it works
             </a>
-            {fileName && (
-              <span className="hero__filename">
-                ✓ {fileName} ready to process
-              </span>
-            )}
           </div>
           <div className="hero__formats">
             <span className="hero__formats-label">SUPPORTS</span>

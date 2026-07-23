@@ -1,0 +1,61 @@
+.upload-panel {
+  flex: 4;
+  background: #1e293b;
+  border: 2px dashed #334155;
+  border-radius: 16px;
+  padding: 40px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.upload-panel:hover {
+  border-color: #3b82f6;
+  background: #243244;
+}
+
+.upload-panel__title {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.upload-panel__subtitle {
+  color: #cbd5e1;
+  margin-bottom: 32px;
+}
+
+.upload-panel__dropzone {
+  padding: 40px 20px;
+}
+
+.upload-panel__dropzone p {
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+}
+
+.upload-panel__dropzone span {
+  display: block;
+  margin: 12px 0;
+  color: #94a3b8;
+}
+
+.upload-panel__button {
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.upload-panel__button:hover {
+  background: #1d4ed8;
+}
+
+.upload-panel__formats {
+  margin-top: 28px;
+  color: #94a3b8;
+  font-size: 0.95rem;
+}

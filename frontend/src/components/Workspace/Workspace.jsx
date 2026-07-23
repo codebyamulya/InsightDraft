@@ -1,7 +1,8 @@
 import "./Workspace.css";
 
-import Sidebar from "../Layout/Sidebar";
-import UploadCard from "./UploadCard";
+import Sidebar from "../Layout/Sidebar/Sidebar";
+import UploadPanel from "./UploadPanel/UploadPanel";
+import OutputPanel from "./OutputPanel/OutputPanel";
 
 function Workspace() {
   return (
@@ -16,7 +17,10 @@ function Workspace() {
           action items, test cases, and more.
         </p>
 
-        <UploadCard />
+        <div className="workspace__panels">
+          <UploadPanel />
+          <OutputPanel />
+        </div>
       </main>
     </div>
   );

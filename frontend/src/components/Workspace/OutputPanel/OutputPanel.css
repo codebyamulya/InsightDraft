@@ -1,0 +1,49 @@
+.output-panel {
+  flex: 6;
+  background: #1e293b;
+  border-radius: 16px;
+  padding: 24px;
+  min-height: 530px;
+}
+
+.output-panel__title {
+  color: #ffffff;
+  font-size: 1.8rem;
+  margin-bottom: 24px;
+}
+
+.output-panel__tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.output-panel__tab {
+  background: #334155;
+  color: #e2e8f0;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.output-panel__tab:hover {
+  background: #475569;
+}
+
+.output-panel__tab--active {
+  background: #2563eb;
+  color: white;
+}
+
+.output-panel__content {
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 20px;
+  min-height: 380px;
+  color: #cbd5e1;
+  line-height: 1.7;
+}

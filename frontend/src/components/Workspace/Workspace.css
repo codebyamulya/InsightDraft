@@ -9,6 +9,12 @@
   flex: 1;
   padding: 40px;
 }
+.workspace__panels {
+  display: flex;
+  gap: 24px;
+  margin-top: 32px;
+  align-items: flex-start;
+}
 
 .workspace__title {
   font-size: 2rem;

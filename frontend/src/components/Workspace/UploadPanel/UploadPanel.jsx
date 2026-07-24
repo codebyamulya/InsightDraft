@@ -1,6 +1,28 @@
 import "./UploadPanel.css";
+import { useState, useRef } from "react";
+import SelectedFileCard from "../SelectedFileCard/SelectedFileCard";
+import EmptyUploadState from "../EmptyUploadState/EmptyUploadState";
 
 function UploadPanel() {
+  const [selectedFile, setSelectedFile] = useState(null);
+  const fileInputRef = useRef(null);
+
+  const handleFileSelect = (event) => {
+    const file = event.target.files[0];
+
+    if (!file) return;
+
+    setSelectedFile(file);
+  };
+
+  const handleBrowseClick = () => {
+    fileInputRef.current.click();
+  };
+
+  const handleRemoveFile = () => {
+    setSelectedFile(null);
+  };
+
   return (
     <div className="upload-panel">
       <h2 className="upload-panel__title">Upload Files</h2>
@@ -10,11 +32,18 @@ function UploadPanel() {
       </p>
 
       <div className="upload-panel__dropzone">
-        <p>📁 Drop files here</p>
+        {selectedFile ? (
+          <SelectedFileCard file={selectedFile} onRemove={handleRemoveFile} />
+        ) : (
+          <EmptyUploadState onBrowseClick={handleBrowseClick} />
+        )}
 
-        <span>or</span>
-
-        <button className="upload-panel__button">Browse Files</button>
+        <input
+          ref={fileInputRef}
+          type="file"
+          hidden
+          onChange={handleFileSelect}
+        />
       </div>
 
       <p className="upload-panel__formats">

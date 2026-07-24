@@ -48,8 +48,8 @@ function Sidebar() {
       <div className="sidebar__footer">
         <span className="sidebar__avatar">A</span>
         <div className="sidebar__footer-text">
-          <span className="sidebar__footer-name">Aditi Sharma</span>
-          <span className="sidebar__footer-plan">Free plan</span>
+          <span className="sidebar__footer-name">Guest User</span>
+          <span className="sidebar__footer-plan">Offline mode</span>
         </div>
       </div>
     </aside>

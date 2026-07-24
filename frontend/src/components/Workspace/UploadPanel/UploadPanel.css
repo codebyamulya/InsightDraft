@@ -71,3 +71,15 @@
   color: #9ca3af;
   font-size: 14px;
 }
+.upload-panel__dropzone--dragging {
+  border: 2px dashed #7c6cf0;
+  background-color: rgba(124, 108, 240, 0.08);
+  transition: all 0.2s ease;
+}
+.upload-panel__error {
+  margin-top: 16px;
+  color: #ef4444;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 500;
+}
